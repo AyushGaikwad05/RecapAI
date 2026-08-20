@@ -86,7 +86,7 @@ const ChatSection = ({ summary, videoId, setAction }) => {
 
 
       const response = await fetch(
-        "https://recapai-backend-8b8n.onrender.com/chat",
+        `${import.meta.env.VITE_BACKEND_URL}/chat`,
         {
           method: "POST",
 

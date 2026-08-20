@@ -79,7 +79,7 @@ useEffect(() => {
 
 
                 const response = await fetch(
-                    "https://recapai-backend-8b8n.onrender.com/process",
+                    `${import.meta.env.VITE_BACKEND_URL}/process`,
                     {
                         method: "POST",
 

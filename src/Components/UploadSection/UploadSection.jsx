@@ -41,7 +41,7 @@ const UploadSection = () => {
       formData.append("file", video);
 
       const response = await fetch(
-        "https://recapai-backend-8b8n.onrender.com/upload",
+        `${import.meta.env.VITE_BACKEND_URL}/upload`,
         {
           method: "POST",
           body: formData,
