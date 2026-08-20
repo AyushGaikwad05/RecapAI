@@ -1,0 +1,23 @@
+.feature-card-container {
+    width: 600px;
+    height: 150px;
+    background-color: white;
+    border: 1px solid gainsboro;
+    border-radius: 1rem;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+}
+
+.feature-card-content h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.7rem;
+}
+
+@media only screen and (max-width: 600px){
+.feature-card-container {
+    width: auto;
+    height: auto;
+}
+
+}

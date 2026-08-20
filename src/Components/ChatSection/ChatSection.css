@@ -1,0 +1,219 @@
+.chat-section {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    overflow: hidden;
+}
+
+
+/* =========================================
+   CHAT MESSAGE AREA
+========================================= */
+
+.chat-container {
+    flex: 1;
+
+    min-height: 0;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    padding: 20px;
+}
+
+
+/* =========================================
+   MESSAGES
+========================================= */
+
+.messages {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+    width: 100%;
+}
+
+
+/* =========================================
+   MESSAGE ROW
+========================================= */
+
+.message-row {
+    display: flex;
+
+    width: 100%;
+}
+
+
+.my-message-row {
+    justify-content: flex-end;
+}
+
+
+.other-message-row {
+    justify-content: flex-start;
+}
+
+
+/* =========================================
+   MESSAGE BUBBLE
+========================================= */
+
+.message-bubble {
+    max-width: 70%;
+
+    padding: 10px 14px;
+
+    border-radius: 10px;
+
+    word-wrap: break-word;
+
+    overflow-wrap: break-word;
+}
+
+
+.message-bubble p {
+    margin: 0;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   USER MESSAGE
+========================================= */
+
+.my-message {
+    background: #e4f5ea;
+    border: #cfcfcfd2 1px solid;
+}
+
+
+/* =========================================
+   AI MESSAGE
+========================================= */
+
+.other-message {
+    background: #d8f0fc;
+    border: #cfcfcfd2 1px solid;
+}
+
+
+/* =========================================
+   SENDER
+========================================= */
+
+.message-bubble span {
+    font-weight: 700;
+}
+
+
+/* =========================================
+   CHAT INPUT
+========================================= */
+
+.chat-input-container {
+    flex-shrink: 0;
+
+    width: 100%;
+
+    min-height: 58px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 10px 12px;
+
+    box-sizing: border-box;
+
+    border-top: 1px solid #ddd;
+
+    background: white;
+}
+
+
+/* =========================================
+   INPUT
+========================================= */
+
+.chat-input-container input {
+    flex: 1;
+
+    min-width: 0;
+
+    height: 42px;
+
+    padding: 0 14px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 15px;
+}
+
+
+.chat-input-container input:focus {
+    border-color: #999;
+}
+
+
+/* =========================================
+   SEND BUTTON
+========================================= */
+
+.send-button {
+    width: 42px;
+
+    height: 42px;
+
+    margin-left: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 20px;
+}
+
+
+.send-button:disabled {
+    opacity: 0.5;
+
+    cursor: not-allowed;
+}
+
+
+/* =========================================
+   SCROLLBAR
+========================================= */
+
+.chat-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+
+.chat-container::-webkit-scrollbar-thumb {
+    background: #bbb;
+
+    border-radius: 10px;
+}
+
+
+.chat-container::-webkit-scrollbar-track {
+    background: transparent;
+}

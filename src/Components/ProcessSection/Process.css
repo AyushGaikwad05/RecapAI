@@ -1,0 +1,47 @@
+.process-section-container {
+    width: 100vw;
+    height: 400px;
+
+    overflow: hidden;
+    margin: 0;
+    text-align: center;
+  
+
+}
+
+.process-section-container h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+.process-section-container p {
+    color: rgb(146, 144, 144);
+}
+
+.process-container {
+    display: flex;
+    justify-content:center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .process-section-container {
+    height: auto;
+    width: auto;
+  }
+
+  .process-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+   .process-section-container {
+    height: auto;
+    width: auto;
+  }
+}

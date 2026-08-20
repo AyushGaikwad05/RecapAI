@@ -1,0 +1,59 @@
+.footer-container {
+  width: 100%;
+    
+  background-color: indigo;
+  margin-top: 2rem;
+  position: relative;
+  bottom: 0;
+
+
+}
+
+.footer-content {
+    
+  position: relative;
+  width: 100%;
+  min-height: 10vh;
+
+  display: flex;
+  align-items: center;
+}
+
+.footer-content h5 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+.credit-container {
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  color: white;
+  white-space: nowrap;
+}
+
+.credit-container p {
+  margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-content {
+    
+  position: relative;
+  width: 100%;
+  min-height: 10vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-content p {
+    margin-top: 2rem;
+}
+}

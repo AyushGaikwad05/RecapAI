@@ -1,0 +1,70 @@
+.upload-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.upload-content h3 {
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.file-container {
+    margin-top: 2rem;
+    width: 30vw;
+    height: 30vh;
+    background-color: rgba(200, 158, 255,0.2);
+    border-radius: 1rem;
+    border: 1px dashed grey;
+    border-style: dashed;
+    border-width: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.file-container i {
+    font-size: 6rem;
+    color: indigo;
+
+ 
+}
+
+.file-container input {
+    width: 100%;
+
+    
+    font-size: 1rem;
+    color: grey;
+    font-weight: 500;
+     display: none;
+}
+
+.file-container label {
+    margin-top: 0.5rem;
+    color: grey;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.upload-button {
+    margin-top: 9rem;
+    width: 100%;
+    height: 60px;
+    padding-inline: 40px;
+    background-color: indigo;
+    color: white;
+    font-weight: bold;
+    border-radius: .18rem;
+   
+}
